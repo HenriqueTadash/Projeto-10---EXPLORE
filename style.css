@@ -1,0 +1,115 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    --ff-heading: 'Palanquin', sans-serif;
+    --ff-texting: 'Staatliches', sans-serif;
+
+    --bg-primary: hsl(218, 17%, 62%);
+    --bg-secondary: hsl(275, 18%, 79%);
+    --bg-third: hsl(312, 91%, 96%);
+
+    --fc-primary: hsl(0,  0%, 100%);
+    --fc-secondary: hsl(274, 84%, 12%);
+    --fc-third: hsl(232, 17%, 35%);
+    
+    font-size: 62.5%;
+    --fs-body:2.0rem;
+    --fs-header:4rem;
+
+}
+
+body { 
+    font-family: var(--ff-texting);
+    font-size: var(--fs-body);
+
+}
+
+.page { 
+     max-width: 33rem;
+     margin: 0 auto;
+
+}
+
+.page img { 
+    width: 100%;
+    height: auto;
+}
+
+header { 
+    background: var(--bg-primary) ;
+    height: 38.4rem;
+    font-family: var(--fs-header);
+    text-align: center;
+    
+}
+
+header img { 
+    margin: 3.2rem auto;
+}
+
+header h1 { 
+    background-color: var(--bg-secondary);
+    color: var(--fc-primary);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 2.9rem;
+    margin: 0 auto;
+
+}
+
+main p { 
+    font-family: var(--ff-heading);
+    color: var(--fc-secondary);
+    margin: 14px auto 63px;
+}
+
+.card { 
+    position: relative;
+}
+
+.card img { 
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 3.9rem;
+}
+
+.card h2 { 
+    background-color: var(--bg-third);
+    color: var(--fc-third);
+    border-radius: 2rem;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 11.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card { 
+    animation-name: downtop;
+    animation-duration: 700ms;
+    animation-direction: reverse;
+}
+
+@keyframes downtop {
+    100% { 
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+h2 {
+    animation-name: downtop;
+    animation-duration: 700ms;
+}
+
+@keyframes topdown {
+    100% { 
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
